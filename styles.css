@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+
+}
+.main{
+    min-height: 100vh;
+    width: 1200px;
+    margin: auto;
+    background-color: #C0DBD9;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1;
+    margin-bottom: 15px ;
+}
+
+.header{
+    background-color: #7FAFF6;
+    height: 100px;
+    margin: 0 15px;
+}
+
+.footer{
+    height: 100px;
+    background-color: #7FAFF6;
+    margin: 0 15px ;
+}
+
+.header button{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 8px 15px 8px 15px;
+    background-color: #A5C7F9;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+}
+
+.header button:hover {
+    background-color: #5896f3;
+}
+
+.block1{
+    margin: 15px 15px 0;
+    height: 411px;
+    background-color: #B3F95A;
+    display: grid;
+    grid-template-columns: 390px 590px 160px;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "frame11 frame12 frame13"
+            "frame14 frame14 frame15";
+    gap: 15px;
+
+}
+
+.block1 div{
+    background-color: #8AD191;
+    color: white;
+    text-align: center;
+    line-height: 198px;
+    font-size: 53px;
+}
+
+.frame11{
+    grid-area: frame11;
+}
+
+.frame12{
+    grid-area: frame12;
+}
+
+.frame13{
+    grid-area: frame13;
+}
+
+.frame14{
+    grid-area: frame14;
+}
+
+.frame15{
+    grid-area: frame15;
+}
+
+.block2{
+    margin: 15px 15px 0;
+    height: 259px;
+    background-color: #88B5BF;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.block2 div{
+    margin-top: 30px;
+    height: 199px;
+    width: 255px;
+    background-color: #0D89B0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2{
+    margin-top: 169px;
+    text-align: center;
+    font-size: 53px;
+}
+
+.popup .close {
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    width: 43px;
+    height: 39px;
+    background-color: #7FAFF6;
+    top: 15px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 39px;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+    .popup{
+        width: 70%;
+    }
+}
